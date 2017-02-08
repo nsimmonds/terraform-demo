@@ -44,7 +44,6 @@ resource "aws_autoscaling_group" "web-asg" {
 }
 
 resource "aws_launch_configuration" "web-lc" {
-  name          = "terraform-example-lc"
   image_id      = "${lookup(var.aws_amis, var.aws_region)}"
   instance_type = "${var.instance_type}"
   lifecycle {
