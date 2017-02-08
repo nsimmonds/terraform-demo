@@ -27,7 +27,7 @@ variable "instance_type" {
 
 variable "asg_min" {
   description = "Min numbers of servers in ASG"
-  default     = "5"
+  default     = "0"
 }
 
 variable "asg_max" {
@@ -37,5 +37,5 @@ variable "asg_max" {
 
 variable "asg_desired" {
   description = "Desired numbers of servers in ASG"
-  default     = "5"
+  default     = "1"
 }
