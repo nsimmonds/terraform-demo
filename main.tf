@@ -47,6 +47,7 @@ resource "aws_launch_configuration" "web-lc" {
   name          = "terraform-example-lc"
   image_id      = "${lookup(var.aws_amis, var.aws_region)}"
   instance_type = "${var.instance_type}"
+  create_before_destroy = true
 
   # Security group
   security_groups = ["${aws_security_group.default.id}"]
