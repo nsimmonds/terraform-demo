@@ -12,7 +12,7 @@ variable "aws_amis" {
 }
 
 variable "availability_zones" {
-  default     = "us-west-2c,us-west-2a,us-west-2b"
+  default     = adjshfksjhdfbgkjhsbdf
   description = "List of availability zones, use AWS CLI to find your "
 }
 
